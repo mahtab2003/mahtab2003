@@ -1,95 +1,547 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="style.css">
-    <title>Mehtab Hassan - Profile Card</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Leo Stack Services - Professional Web Development & Digital Solutions</title>
+    <meta name="title" content="Leo Stack Services - Professional Web Development & Digital Solutions">
+    <meta name="description" content="Expert web development, UI/UX design, and digital solutions. Transform your business with our innovative technology services and creative solutions.">
+    <meta name="keywords" content="web development, UI/UX design, digital solutions, professional developer, web design, responsive websites, frontend development, backend development">
+    <meta name="author" content="Leo Stack Services">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://leostackservices.com/">
+    <meta property="og:title" content="Leo Stack Services - Professional Web Development & Digital Solutions">
+    <meta property="og:description" content="Transform your business with our innovative web development, UI/UX design, and digital solutions. Expert services tailored to your needs.">
+    <meta property="og:image" content="images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://leostackservices.com/">
+    <meta property="twitter:title" content="Leo Stack Services - Professional Web Development & Digital Solutions">
+    <meta property="twitter:description" content="Transform your business with our innovative web development, UI/UX design, and digital solutions. Expert services tailored to your needs.">
+    <meta property="twitter:image" content="images/twitter-image.jpg">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#dc143c">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://leostackservices.com/">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="apple-touch-icon" type="image/png" href="img/logo.png">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="modal">
-        <img src="profile.jpg" alt="">
-        <div class="close"></div>
-    </div>
-    
-    <div class="container">
-        <div class="card">
-            <div class="header">
-                <div class="hamburger-menu">
-                    <div class="center"></div>
-                </div>
-                <a href="mailto:mahtabhassan159@gmail.com" class="mail">
-                    <i class="far fa-envelope"></i>
-                </a>
-                <div class="main">
-                    <div class="image">
-                        <div class="hover">
-                            <i class="fas fa-camera fa-2x"></i>
-                        </div>
-                    </div>
-                    <h3 class="name">Mehtab Hassan</h3>
-                    <h3 class="sub-name">@Mahtab2003</h3>
-                </div>
-            </div>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
 
-            <div class="content">
-                <div class="left">
-                    <div class="about-container">
-                        <h3 class="title">About</h3>
-                        <p class="text">Hi! I am a Professional Web Developer and an Experienced Forex and Liqiudity Trader.</p>
-                    </div>
-                    <div class="icons-container">
-                        <a href="https://facebook.com/mahtab.has.159/" target="_blank" class="icon">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com/mahtab.has.nx/" target="_blank" class="icon">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@nxnetworkltd" target="_blank" class="icon">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                    <div class="buttons-wrap">
-                        <div class="follow-wrap">
-                            <a href="https://w.me/923094428355" target="_blank" class="follow">WhatsApp</a>
-                        </div>
-                        <div class="share-wrap">
-                            <a href="tel://+923094428355" target="_blank" class="share">Call Me</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="right">
-                    <div>
-                        <h3 class="number">11+</h3>
-                        <h3 class="number-title">Projects</h3>
-                    </div>
-                    <div>
-                        <h3 class="number">5+</h3>
-                        <h3 class="number-title">Following</h3>
-                    </div>
-                    <div>
-                        <h3 class="number">101+</h3>
-                        <h3 class="number-title">Followers</h3>
-                    </div>
-                </div>
+    <!-- Portfolio Modal -->
+    <div class="modal" id="portfolioModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Content will be dynamically inserted -->
             </div>
         </div>
     </div>
-    <script src="app.js"></script>
-	<script type="text/javascript">
-		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-		(function(){
-			var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-			s1.async=true;
-			s1.src='https://embed.tawk.to/644cb0c831ebfa0fe7fb09c8/1gv5p54uf';
-			s1.charset='UTF-8';
-			s1.setAttribute('crossorigin','*');
-			s0.parentNode.insertBefore(s1,s0);
-		})();
-	</script>
+
+    <header class="header">
+        <nav class="navbar container">
+            <div class="logo">
+                <!-- <h1>Leo Stack Services</h1> -->
+                 <img src="img/logo.png" alt="Leo Stack Services" style="max-width: 56px; justify-content: center;">
+            </div>
+            <div class="nav-toggle" id="navToggle" style="margin-right: 14px;">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-bg">
+                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Hero Background">
+                <div class="overlay"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-info">
+                        <span class="hero-welcome">Welcome to Leo Stack Services</span>
+                        <h1>Building Digital Solutions for Tomorrow's Challenges</h1>
+                        <p>We specialize in creating innovative digital experiences that transform businesses. Our expert team combines creativity with technical excellence to deliver outstanding results.</p>
+                        <div class="hero-cta">
+                            <a href="#contact" class="btn-primary">Start Project</a>
+                            <a href="#services" class="btn-secondary">View Services</a>
+                        </div>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-rocket"></i>
+                            <div class="stat-text">
+                                <h4>100+</h4>
+                                <p>Projects Launched</p>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-smile"></i>
+                            <div class="stat-text">
+                                <h4>50+</h4>
+                                <p>Happy Clients</p>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-award"></i>
+                            <div class="stat-text">
+                                <h4>4+</h4>
+                                <p>Years Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <span>Scroll Down</span>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Services</h2>
+                    <p>Comprehensive Digital Solutions for Your Business</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>Custom E-Commerce Solutions</h3>
+                        <p>Build your online store with customized features, secure payment gateways, and seamless user experience.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Custom Shopping Cart</li>
+                            <li><i class="fas fa-check"></i> Payment Integration</li>
+                            <li><i class="fas fa-check"></i> Inventory Management</li>
+                        </ul>
+                        <a href="#contact" class="service-cta">Get Started</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Website Development</h3>
+                        <p>Create stunning, responsive websites that engage visitors and drive conversions.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Responsive Design</li>
+                            <li><i class="fas fa-check"></i> SEO Optimization</li>
+                            <li><i class="fas fa-check"></i> Performance Tuning</li>
+                        </ul>
+                        <a href="#contact" class="service-cta">Get Started</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fab fa-shopify"></i>
+                        </div>
+                        <h3>Shopify & WordPress</h3>
+                        <p>Expert setup and customization of popular e-commerce and CMS platforms.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Theme Customization</li>
+                            <li><i class="fas fa-check"></i> Plugin Integration</li>
+                            <li><i class="fas fa-check"></i> Store Management</li>
+                        </ul>
+                        <a href="#contact" class="service-cta">Get Started</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile App Development</h3>
+                        <p>Native Android & iOS applications that provide seamless user experience.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Native Development</li>
+                            <li><i class="fas fa-check"></i> Cross-platform Apps</li>
+                            <li><i class="fas fa-check"></i> App Store Publishing</li>
+                        </ul>
+                        <a href="#contact" class="service-cta">Get Started</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3>Game Development</h3>
+                        <p>Create engaging and immersive gaming experiences for multiple platforms.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Unity & Unreal Engine</li>
+                            <li><i class="fas fa-check"></i> 2D & 3D Games</li>
+                            <li><i class="fas fa-check"></i> Cross-platform Gaming</li>
+                        </ul>
+                        <a href="#contact" class="service-cta">Get Started</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Graphic Design</h3>
+                        <p>Creative design solutions that bring your brand vision to life.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Brand Identity</li>
+                            <li><i class="fas fa-check"></i> UI/UX Design</li>
+                            <li><i class="fas fa-check"></i> Marketing Materials</li>
+                        </ul>
+                        <a href="#contact" class="service-cta">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="technologies" class="technologies">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Technologies We Use</h2>
+                    <p>Our Tech Stack for Building Modern Solutions</p>
+                </div>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3>HTML5</h3>
+                        <p>Modern, Semantic Markup</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3>CSS3</h3>
+                        <p>Advanced Styling</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>Dynamic Functionality</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <h3>PHP</h3>
+                        <p>Server-side Processing</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3>React</h3>
+                        <p>Modern UI Development</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3>React Native</h3>
+                        <p>Mobile App Development</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>MySQL</h3>
+                        <p>Relational Database</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>MongoDB</h3>
+                        <p>NoSQL Database</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <h3>Node.js</h3>
+                        <p>Server Runtime</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-ubuntu"></i>
+                        </div>
+                        <h3>Linux</h3>
+                        <p>Server Management</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Meet Our Team</h2>
+                    <p>Talented Professionals Behind Our Success</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296" alt="Mehtab Hassan">
+                        </div>
+                        <div class="member-info">
+                            <h3>Mehtab Hassan</h3>
+                            <p class="role">Full Stack Developer</p>
+                            <p class="bio">Expert in full-stack development with a passion for creating scalable and efficient web solutions.</p>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a" alt="Haziq Mehboob">
+                        </div>
+                        <div class="member-info">
+                            <h3>Haziq Mehboob</h3>
+                            <p class="role">Marketing Specialist & Graphic Designer</p>
+                            <p class="bio">Creative professional with expertise in marketing strategy and visual design solutions.</p>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-behance"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Choose Us</h2>
+                    <p>Your Success is Our Priority</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-content">
+                        <div class="about-text">
+                            <h3>Expertise That Delivers Results</h3>
+                            <p style="text-align: justify;">At Leo Stack Services, we combine technical expertise with creative innovation to deliver solutions that drive your business forward. Our commitment to quality and customer satisfaction sets us apart.</p>
+                            <ul class="about-features">
+                                <li><i class="fas fa-check"></i> Dedicated Project Manager</li>
+                                <li><i class="fas fa-check"></i> Agile Development Process</li>
+                                <li><i class="fas fa-check"></i> 24/7 Support</li>
+                                <li><i class="fas fa-check"></i> Competitive Pricing</li>
+                            </ul>
+                        </div>
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <h4>Fast Delivery</h4>
+                                <p>Quick turnaround time without compromising quality</p>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h4>Secure Solutions</h4>
+                                <p>Built with security best practices</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984" alt="Our Work Environment">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Client Testimonials</h2>
+                    <p>What Our Clients Say About Us</p>
+                </div>
+                <div class="testimonials-slider">
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>"Leo Stack Services transformed our online presence. Their expertise in e-commerce development helped us increase our sales by 200%."</p>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="Sarah Johnson">
+                                <div class="author-info">
+                                    <h4>Sarah Johnson</h4>
+                                    <p>CEO, Fashion Boutique</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>"The mobile app they developed for us has received outstanding user feedback. Their attention to detail and user experience is exceptional."</p>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e" alt="John Smith">
+                                <div class="author-info">
+                                    <h4>John Smith</h4>
+                                    <p>Founder, Tech Startup</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Portfolio</h2>
+                    <p>Showcasing Our Best Work</p>
+                </div>
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="web">
+                        <img src="https://images.unsplash.com/photo-1517292987719-0369a794ec0f" alt="E-Commerce Platform">
+                        <div class="portfolio-info">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Web Development</p>
+                            <button class="view-project" data-project="ecommerce">View Details</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="mobile">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3" alt="Mobile App UI">
+                        <div class="portfolio-info">
+                            <h3>Fitness Tracking App</h3>
+                            <p>Mobile Development</p>
+                            <button class="view-project" data-project="fitness">View Details</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="design">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0" alt="Brand Identity">
+                        <div class="portfolio-info">
+                            <h3>Corporate Branding</h3>
+                            <p>Graphic Design</p>
+                            <button class="view-project" data-project="branding">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <p>Let's Discuss Your Project</p>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Location</h3>
+                            <p>Silicon Valley, California</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>contact@leostackservices.com</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="ecommerce">E-Commerce Solutions</option>
+                                <option value="web">Website Development</option>
+                                <option value="cms">Shopify & WordPress</option>
+                                <option value="mobile">Mobile App Development</option>
+                                <option value="design">Graphic Design</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required placeholder="Project Details"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="footer-section">
+                <h3>Leo Stack Services</h3>
+                <p>Transforming ideas into digital reality with innovative solutions and exceptional service.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="footer-contact">
+                    <p><i class="fas fa-map-marker-alt"></i> Silicon Valley, California</p>
+                    <p><i class="fas fa-envelope"></i> contact@leostackservices.com</p>
+                    <p><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Leo Stack Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
