@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <a href="https://api.whatsapp.com/send?phone=919876543210&text=Hey%20Mehyab!%20I%20found%20you%20on%20GitHub!">
+  <a href="https://api.whatsapp.com/send?phone=923094428355&text=Hey%20Mehyab!%20I%20found%20you%20on%20GitHub!">
     <img src="https://img.shields.io/badge/Chat%20on-WhatsApp-25D366?style=flat&logo=whatsapp&logoColor=white" />
   </a>
   <a href="mailto:mahtab@nxtsdev.eu.org">
@@ -52,8 +52,8 @@ I specialize in:
 
 Wanna collaborate or just vibe over cool ideas?
 
-- 📱 [Chat on WhatsApp](https://api.whatsapp.com/send?phone=919876543210&text=Hey%20Mehyab!%20Found%20you%20on%20GitHub!)
-- 📧 Email: your@email.com
+- 📱 [Chat on WhatsApp](https://api.whatsapp.com/send?phone=923094428355&text=Hey%20Mehyab!%20Found%20you%20on%20GitHub!)
+- 📧 Email: mehtab@nxtsdev.eu.org
 - 🌐 Portfolio: Coming Soon!
 
 ---
