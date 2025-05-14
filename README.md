@@ -17,7 +17,7 @@
 
 ## 🐝 About Me
 
-I'm **Mehyab** (aka `mahtab2003` on GitHub) – a developer obsessed with crafting secure and scalable systems. From full-stack web platforms to microservices and passive income tools, I turn code into cash 💰 and ideas into interfaces 🎨.
+I'm **Mehtab** (aka `mahtab2003` on GitHub) – a developer obsessed with crafting secure and scalable systems. From full-stack web platforms to microservices and passive income tools, I turn code into cash 💰 and ideas into interfaces 🎨.
 
 I specialize in:
 - 🔐 **Authentication & Security**
