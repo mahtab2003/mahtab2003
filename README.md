@@ -52,7 +52,7 @@ I specialize in:
 
 Wanna collaborate or just vibe over cool ideas?
 
-- 📱 [Chat on WhatsApp](https://api.whatsapp.com/send?phone=923094428355&text=Hey%20Mehyab!%20Found%20you%20on%20GitHub!)
+- 📱 [Chat on WhatsApp](https://api.whatsapp.com/send?phone=923094428355&text=Hey%20Mehtab!%20Found%20you%20on%20GitHub!)
 - 📧 Email: mehtab@nxtsdev.eu.org
 - 🌐 Portfolio: Coming Soon!
 
