@@ -4,11 +4,11 @@
 </p>
 
 <p align="center">
-  <a href="https://api.whatsapp.com/send?phone=923094428355&text=Hey%20Mehyab!%20I%20found%20you%20on%20GitHub!">
+  <a href="https://api.whatsapp.com/send?phone=923094428355&text=Hey%20Mehtab!%20I%20found%20you%20on%20GitHub!">
     <img src="https://img.shields.io/badge/Chat%20on-WhatsApp-25D366?style=flat&logo=whatsapp&logoColor=white" />
   </a>
   <a href="mailto:mahtab@nxtsdev.eu.org">
-    <img src="https://img.shields.io/badge/Email-Mehyab-blue?style=flat&logo=gmail" />
+    <img src="https://img.shields.io/badge/Email-Mehtab-blue?style=flat&logo=gmail" />
   </a>
   <img src="https://komarev.com/ghpvc/?username=mahtab2003&color=blue" alt="Profile views" />
 </p>
