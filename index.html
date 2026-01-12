@@ -43,6 +43,7 @@
     <meta name="application-name" content="Mehtab Portfolio" />
     <meta name="apple-mobile-web-app-title" content="Mehtab" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     
     <!-- Canonical URL -->
@@ -81,10 +82,6 @@
       "hasCredential": {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "Professional Certification"
-      },
-      "alumniOf": {
-        "@type": "Organization",
-        "name": "Tech Solutions Inc."
       }
     }
     </script>
@@ -99,11 +96,6 @@
       "author": {
         "@type": "Person",
         "name": "Mehtab"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://nxtsdev.eu.org/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
       }
     }
     </script>
@@ -132,9 +124,13 @@
     </script>
     
     <title>Mehtab — Full Stack Developer</title>
+    <script type="module" crossorigin src="/assets/index-CvPKxqpj.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-ODcB7m-7.css">
+  </head>
+  <body>
     
     <!-- Hidden SEO Content -->
-    <div style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;">
+    <div id="hidden-seo-content" style="position: fixed; left: -9999px; width: 1px; height: 1px; overflow: hidden;">
       <h1>Mehtab - Professional Backend Developer and System Architect</h1>
       <p>Mehtab is an experienced backend developer specializing in Node.js and Hapi.js framework development. With extensive expertise in building secure, scalable APIs and real-time systems, Mehtab has successfully delivered numerous projects for clients across various industries. The portfolio showcases expertise in PostgreSQL and RethinkDB database management, implementing robust security measures including JWT authentication and CSRF protection, and optimizing system performance for high-traffic applications.</p>
       
@@ -173,11 +169,19 @@
       
       <h2>Contact and Collaboration</h2>
       <p>For backend development projects, API architecture needs, database optimization requirements, security implementation, or system modernization, Mehtab is available for consultation and project work. The portfolio website provides comprehensive information about expertise, projects, and services. Contact through the website form or email for detailed project discussions and estimates. Response time is typically within 24 hours, ensuring timely communication for project inquiries.</p>
+      <a href="/about">About</a>
+      <a href="/skills">Skills</a>
+      <a href="/experience">Experience</a>
+      <a href="/projects">Projects</a>
+      <a href="/contact">Contact</a>
     </div>
-    <script type="module" crossorigin src="/assets/index-xe9vYJvO.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BPX_0caI.css">
-  </head>
-  <body>
     <div id="root"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+          document.getElementById("hidden-seo-content").remove();
+        }, 10000)
+      })
+    </script>
   </body>
 </html>

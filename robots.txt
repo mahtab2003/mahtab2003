@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mehtab.dev/sitemap.xml
+Sitemap: https://nxtsdev.eu.org/sitemap.xml
 
