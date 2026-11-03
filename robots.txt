@@ -1,5 +1,4 @@
-User-agent: *
+User-Agent: *
 Allow: /
 
 Sitemap: https://nxtsdev.eu.org/sitemap.xml
-
